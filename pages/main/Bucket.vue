@@ -1,15 +1,7 @@
 <template>
-  <div>{{ store.items[0] }}</div>
+  <div>bucket page</div>
 </template>
 
-<script>
-import { useBucketStore } from "../../store/bucket";
+<script setup>
 
-export default {
-  data() {
-    return {
-      store: useBucketStore(),
-    };
-  },
-};
 </script>

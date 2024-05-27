@@ -1,4 +1,7 @@
 <template>
-    <AppHeader />
-    <slot></slot>
+  <AppHeader />
+  <slot></slot>
 </template>
+
+<script setup>
+</script>
