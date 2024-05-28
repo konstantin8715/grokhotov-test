@@ -1,14 +1,13 @@
 <template>
   <div class="container">
-    <header class="header" style="border: 2px solid brown;">
-      <div class="header__menu">header menu</div>
+    <header class="header">
+      <div class="header__menu"></div>
       <AppHeaderBucket />
     </header>
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style lang="scss">
 .header {

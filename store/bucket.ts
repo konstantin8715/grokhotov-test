@@ -3,7 +3,8 @@ import { defineStore } from "pinia";
 export const useBucketStore = defineStore("bucket", () => {
   const products = ref([
     {
-      picture: "",
+      id: 1,
+      img: "g2h.png",
       title: "Вытяжное устройство G2H",
       discription:
         "12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия",
@@ -12,7 +13,8 @@ export const useBucketStore = defineStore("bucket", () => {
       price: 12644,
     },
     {
-      picture: "",
+      id: 2,
+      img: "bxc.png",
       title: "Вытяжное устройство BXC",
       discription:
         "12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия",
@@ -21,7 +23,8 @@ export const useBucketStore = defineStore("bucket", () => {
       price: 12644,
     },
     {
-      picture: "",
+      id: 3,
+      img: "ghn.png",
       title: "Вытяжное устройство GHN",
       discription:
         "12-72/168 м3/ч / гидрорегулируемый расход / от датчика присутствия",

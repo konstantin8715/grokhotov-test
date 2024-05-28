@@ -1,7 +1,7 @@
 <template>
   <div class="mini-bucket">
-    <img src="assets/img/bucket-logo.png" alt="bucket" />
-    <div class="mini_bucket__data">
+    <img class="mini-bucket__logo" src="assets/img/bucket-logo.png" alt="bucket" />
+    <div class="mini-bucket__data">
       <span class="mini-bucket__title">Ваша корзина</span>
       <span class="mini-bucket__count">{{ count }} товара</span>
       <span class="mini-bucket__price">{{ sum }}</span>
@@ -28,7 +28,7 @@ const sum = computed(() => bucket.sum);
   align-items: center;
 }
 
-img {
+.mini-bucket__logo {
   margin-right: 10px;
   width: 32px;
   height: 32px;

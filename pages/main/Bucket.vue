@@ -1,7 +1,7 @@
 <template>
-  <div>bucket page</div>
+  <div class="container">
+    <AppBucket />
+  </div>
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
