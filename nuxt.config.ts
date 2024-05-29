@@ -4,6 +4,6 @@ export default defineNuxtConfig({
   alias: {
     "@": "/<rootDir>",
   },
-  modules: ["@pinia/nuxt"],
-  css: ['~/assets/main.scss'],
+  modules: ["@pinia/nuxt", "nuxt-icon"],
+  css: ["~/assets/main.scss"],
 });

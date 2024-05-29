@@ -20,8 +20,8 @@
         class="product-list__installation-img"
       />
       <div class="product-list__installation-data">
-        <span class="product-list__installation-discription">Установка</span>
-        <span class="product-list__installation-title">
+        <span class="product-list__installation-title">Установка</span>
+        <span class="product-list__installation-discription">
           Отметьте, если Вам необходима консультация профессионала по монтажу
           выбранных товаров.
         </span>
@@ -41,11 +41,14 @@ defineProps({
 
 <style lang="scss">
 @import "assets/colors";
+.product-list {
+  width: 800px;
+}
 
 .product-list__header {
   display: flex;
   justify-content: space-between;
-  border: 2px solid red;
+  border: 1px solid red;
   // align-items: center;
   height: 53px;
 }
@@ -81,7 +84,46 @@ defineProps({
 }
 
 .product-list__list {
-  border: 2px solid red;
+  border: 1px solid red;
   margin-top: 50px;
+}
+
+.product-list__installation {
+  display: flex;
+  align-items: center;
+  height: 102px;
+  background: $block;
+  margin-top: 44px;
+}
+
+.product-list__installation-checkbox {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-left: 25px;
+}
+
+.product-list__installation-img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+.product-list__installation-data {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-list__installation-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: $primary-text;
+}
+
+.product-list__installation-discription {
+  font-weight: 400;
+  font-size: 14px;
+  color: $text;
 }
 </style>

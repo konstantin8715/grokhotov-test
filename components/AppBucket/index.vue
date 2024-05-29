@@ -1,7 +1,11 @@
 <template>
   <div class="bucket">
     <AppBucketList :products="products" />
-    <AppBucketTotal />
+    <AppBucketTotal
+      :sum="sum"
+      :count="count"
+      :installation="installation"
+    />
   </div>
 </template>
 
@@ -9,8 +13,14 @@
 import { useBucketStore } from "../../store/bucket";
 
 const bucket = useBucketStore();
-// console.log(bucket.products);
+
 const products = computed(() => bucket.products);
+
+const sum = computed(() => bucket.sum);
+
+const count = computed(() => bucket.count);
+
+const installation = computed(() => bucket.installation);
 </script>
 
 <style lang="scss">
@@ -18,5 +28,6 @@ const products = computed(() => bucket.products);
   display: flex;
   align-items: center;
   margin-top: 60px;
+  justify-content: space-between;
 }
 </style>
